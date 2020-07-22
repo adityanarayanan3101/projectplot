@@ -20,7 +20,7 @@ data['Date']= pd.to_datetime(data['Date'],format='%m/%d/%Y')
 
 dict_list= [{'value': i,'label': i} for i in list(data.iloc[:,1:].columns)]
 
-image= r"C:\Users\adity\Downloads\UCLA_Anderson.png"
+image= "UCLA_Anderson.png"
 test_base64 = base64.b64encode(open(image, 'rb').read()).decode('ascii')
 
 fig= px.line(data,x=data.columns[0],y=data.columns[1:])
